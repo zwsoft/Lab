@@ -1,0 +1,12 @@
+# VS help/config files
+*.sdf
+*.opensdf
+*.suo
+*.user
+
+# VS build folder
+/Debug
+/Release
+/*/Debug
+/*/Release
+/ipch
