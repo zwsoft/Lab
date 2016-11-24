@@ -149,7 +149,6 @@
   <ItemGroup>
     <None Include="ATLServer.def" />
     <None Include="ATLServer.rgs" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="ReadMe.txt" />
     <None Include="Service.rgs" />
   </ItemGroup>
