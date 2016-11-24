@@ -31,6 +31,9 @@
     <ClCompile Include="ATLServer_i.c">
       <Filter>生成的文件</Filter>
     </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -48,6 +51,9 @@
     <ClInclude Include="ATLServer_i.h">
       <Filter>生成的文件</Filter>
     </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ATLServer.rc">
@@ -62,6 +68,10 @@
     <None Include="ATLServer.def">
       <Filter>源文件</Filter>
     </None>
+    <None Include="Service.rgs">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="ATLServer.idl">

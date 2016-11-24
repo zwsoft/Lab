@@ -1,0 +1,26 @@
+HKCR
+{
+	Service.1 = s 'Service Class'
+	{
+		CLSID = s '{56E0B9F1-DDBF-4A65-A573-69829B755CA7}'
+	}
+	Service = s 'Service Class'
+	{		
+		CurVer = s 'Service.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {56E0B9F1-DDBF-4A65-A573-69829B755CA7} = s 'Service Class'
+		{
+			ProgID = s 'Service.1'
+			VersionIndependentProgID = s 'Service'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{AD1D76A5-A591-44FF-9806-7E512FBA0779}'
+			Version = s '1.0'
+		}
+	}
+}

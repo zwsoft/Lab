@@ -8,11 +8,28 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(0FBAE5B9-3294-42B6-8031-A950AB0E4667),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IService : IDispatch{
+	[id(1), helpstring("integer addition")] HRESULT Add([in] LONG n1, [in] LONG n2, [out,retval] LONG* ret);
+};
+[
 	uuid(AD1D76A5-A591-44FF-9806-7E512FBA0779),
 	version(1.0),
 ]
 library ATLServerLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(56E0B9F1-DDBF-4A65-A573-69829B755CA7)		
+	]
+	coclass Service
+	{
+		[default] interface IService;
+	};
 };
 
