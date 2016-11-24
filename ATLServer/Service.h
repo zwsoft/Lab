@@ -54,6 +54,6 @@ public:
 	STDMETHOD(Add)(LONG n1, LONG n2, LONG* ret);
 };
 
-#ifndef CONSOLE
+#ifndef ZW_COM_WRAPPER
 OBJECT_ENTRY_AUTO(__uuidof(Service), CService)
 #endif
