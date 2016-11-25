@@ -1,10 +1,13 @@
 // Service.h : CService µÄÉùÃ÷
 
 #pragma once
+
+#ifdef ZW_COM_WRAPPER
+#include "ServiceHelper.h"
+#else
 #include "resource.h"       // Ö÷·ûºÅ
-
-
 #include "ATLServer_i.h"
+#endif
 
 
 using namespace ATL;
@@ -14,9 +17,14 @@ using namespace ATL;
 
 class ATL_NO_VTABLE CService :
 	public CComObjectRootEx<CComSingleThreadModel>,
+#ifndef ZW_COM_WRAPPER
 	public CComCoClass<CService, &CLSID_Service>,
 	public IDispatchImpl<IService, &IID_IService, &LIBID_ATLServerLib, /*wMajor =*/ 1, /*wMinor =*/ 0>
 	,public IDispatchImpl<IService2>
+#else
+	public IService,
+	public IService2
+#endif
 {
 public:
 	CService()

@@ -5,6 +5,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATLServer", "ATLServer\ATLS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleClient", "ConsoleClient\ConsoleClient.vcxproj", "{0E851503-0E78-48E4-95A7-B5FFC018FF93}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simulator", "Simulator\Simulator.vcxproj", "{7A270489-AD39-412C-B2AA-16C7458A422D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppTester", "CppTester\CppTester.vcxproj", "{75C395A7-B2E9-4032-9970-CC98C1943A5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +23,14 @@ Global
 		{0E851503-0E78-48E4-95A7-B5FFC018FF93}.Debug|Win32.Build.0 = Debug|Win32
 		{0E851503-0E78-48E4-95A7-B5FFC018FF93}.Release|Win32.ActiveCfg = Release|Win32
 		{0E851503-0E78-48E4-95A7-B5FFC018FF93}.Release|Win32.Build.0 = Release|Win32
+		{7A270489-AD39-412C-B2AA-16C7458A422D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7A270489-AD39-412C-B2AA-16C7458A422D}.Debug|Win32.Build.0 = Debug|Win32
+		{7A270489-AD39-412C-B2AA-16C7458A422D}.Release|Win32.ActiveCfg = Release|Win32
+		{7A270489-AD39-412C-B2AA-16C7458A422D}.Release|Win32.Build.0 = Release|Win32
+		{75C395A7-B2E9-4032-9970-CC98C1943A5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75C395A7-B2E9-4032-9970-CC98C1943A5D}.Debug|Win32.Build.0 = Debug|Win32
+		{75C395A7-B2E9-4032-9970-CC98C1943A5D}.Release|Win32.ActiveCfg = Release|Win32
+		{75C395A7-B2E9-4032-9970-CC98C1943A5D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

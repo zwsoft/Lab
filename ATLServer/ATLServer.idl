@@ -7,6 +7,7 @@
 import "oaidl.idl";
 import "ocidl.idl";
 
+// IService
 [
 	object,
 	uuid(0FBAE5B9-3294-42B6-8031-A950AB0E4667),
@@ -17,6 +18,19 @@ import "ocidl.idl";
 interface IService : IDispatch{
 	[id(1), helpstring("integer addition")] HRESULT Add([in] LONG n1, [in] LONG n2, [out,retval] LONG* ret);
 };
+
+// IService2
+[
+	object,
+	uuid(F6AC92E0-43BD-4E81-80F1-3F8B56069F78),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IService2 : IDispatch{
+	[id(1), helpstring("integer multiplication")] HRESULT Multiply([in] LONG n1, [in] LONG n2, [out,retval] LONG* ret);
+};
+
 [
 	uuid(AD1D76A5-A591-44FF-9806-7E512FBA0779),
 	version(1.0),
